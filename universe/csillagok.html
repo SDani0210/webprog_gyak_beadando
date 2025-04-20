@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Csillagok és Galaxisok</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Saját CSS -->
+  <link rel="stylesheet" href="../style/style.css" />
+</head>
+<body>
+
+  <!-- Csillanások háttér -->
+  <div id="particle-background"></div>
+
+  <!-- Navigáció -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">Univerzum</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="bolygok.html">Bolygók</a></li>
+          <li class="nav-item"><a class="nav-link active" href="csillagok.html">Csillagok</a></li>
+          <li class="nav-item"><a class="nav-link" href="urkutatas.html">Űrkutatás</a></li>
+          <li class="nav-item"><a class="nav-link" href="kapcsolat.html">Kapcsolat</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Fejléc -->
+  <header class="hero-header text-center text-light" style="background-image: url('../imgs/stars_stellars.jpg');">
+    <div class="overlay">
+      <h1 class="display-4">Csillagok és Galaxisok</h1>
+      <p class="lead">Ismerd meg a csillagok születését, fejlődését és a galaxisok lenyűgöző világát.</p>
+    </div>
+  </header>
+
+  <!-- Átmenet -->
+  <div id="transition-bg"></div>
+
+  <!-- Tartalom -->
+  <main class="container my-5 text-light">
+    
+    <!-- Szekció 1 -->
+    <section class="mb-5">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2>Mi az a csillag?</h2>
+          <p>A csillag egy izzó gázgömb, amelyet a belsejében zajló fúziós reakciók tartanak életben. A Nap is egy közönséges csillag. A csillagok tömege, színe és életciklusa különböző lehet.</p>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="particle-mask">
+                <img src="../imgs/star.jpg" class="img-fluid rounded shadow" alt="Csillag" />
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Szekció 2 -->
+    <section class="mb-5">
+      <div class="row align-items-center flex-md-row-reverse">
+        <div class="col-md-6">
+          <h2>Csillagok életútja</h2>
+          <p>A csillagok születése hatalmas gáz- és porfelhőkből indul, amit gravitáció húz össze. Életük során különböző fázisokon mennek keresztül: fősorozat, vörös óriás, fehér törpe, szupernehéz csillagok, neutroncsillag vagy fekete lyuk – a tömegüktől függően.</p>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="particle-mask">
+                <img src="../imgs/star_lifecycle.jpg" class="img-fluid rounded shadow" alt="Csillag életciklusa" />
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Szekció 3 -->
+    <section class="mb-5 text-center">
+      <h2>Galaxisok</h2>
+      <p>A galaxisok csillagok, por és gáz hatalmas halmazai, amelyeket gravitáció tart össze. A legismertebb a Tejútrendszer, amelynek része a Naprendszer is. Léteznek spirál-, elliptikus és szabálytalan galaxisok.</p>
+        <div class="particle-mask">
+            <img src="../imgs/galaxies.jpg" class="img-fluid rounded shadow mt-3" alt="Galaxis" />
+        </div>
+    </section>
+
+  </main>
+
+  <!-- Lábléc -->
+  <footer class="text-center text-white py-3">
+    &copy; 2025 – Webprogramozás Beadandó – NN8T44
+  </footer>
+
+  <!-- Bootstrap JS + saját -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js_storage/index.js"></script>
+</body>
+</html>
