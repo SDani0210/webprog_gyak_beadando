@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Űrkutatás története</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Saját CSS -->
+  <link rel="stylesheet" href="../style/style.css" />
+</head>
+<body>
+
+  <!-- Csillogás háttér -->
+  <div id="particle-background"></div>
+
+  <!-- Navigáció -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">Univerzum</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="bolygok.html">Bolygók</a></li>
+          <li class="nav-item"><a class="nav-link" href="csillagok.html">Csillagok</a></li>
+          <li class="nav-item"><a class="nav-link active" href="urkutatas.html">Űrkutatás</a></li>
+          <li class="nav-item"><a class="nav-link" href="kapcsolat.html">Kapcsolat</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Fejléc -->
+  <header class="hero-header text-center text-light" style="background-image: url('../imgs/spacerace.jpg');">
+    <div class="overlay">
+      <h1 class="display-4">Űrkutatás története</h1>
+      <p class="lead">Az emberiség útja a csillagok felé – az első rakétáktól a világűr meghódításáig.</p>
+    </div>
+  </header>
+
+  <!-- Átmenet -->
+  <div id="transition-bg"></div>
+
+  <!-- Tartalom -->
+  <main class="container my-5 text-light">
+
+    <!-- Bevezető -->
+    <section class="mb-5">
+      <h2>Az űrkutatás kezdetei</h2>
+      <p>Az űrkutatás a 20. század egyik legnagyobb tudományos és technológiai áttörése. Az első lépések a rakétatudományban kezdődtek a második világháború idején, majd ezt követően a hidegháború hajtotta előre a szovjet és amerikai űrversenyt.</p>
+    </section>
+
+    <!-- Szekció 1 -->
+    <section class="mb-5 row align-items-center">
+      <div class="col-md-6">
+        <h3>1957 – Szputnyik-1: Az első műhold</h3>
+        <p>1957. október 4-én a Szovjetunió fellőtte a Szputnyik–1-et, az első mesterséges műholdat, amely Föld körüli pályára állt. Ez az esemény megnyitotta az utat az űrkorszak előtt, és hatalmas hatással volt a nemzetközi tudományos világra.</p>
+      </div>
+      <div class="col-md-6 particle-mask text-center">
+        <img src="../imgs/sputnik.jpg" class="img-fluid rounded shadow" alt="Szputnyik-1">
+      </div>
+    </section>
+
+    <!-- Szekció 2 -->
+    <section class="mb-5 row align-items-center flex-md-row-reverse">
+      <div class="col-md-6">
+        <h3>1961 – Jurij Gagarin: Az első ember az űrben</h3>
+        <p>Jurij Gagarin 1961-ben a Vosztok–1 fedélzetén az első ember lett, aki Föld körüli pályára lépett. Repülése mindössze 108 percig tartott, de történelmi mérföldkővé vált – az emberi űrutazás hivatalosan elkezdődött.</p>
+      </div>
+      <div class="col-md-6 particle-mask text-center">
+        <img src="../imgs/yurig.jpg" class="img-fluid rounded shadow" alt="Jurij Gagarin">
+      </div>
+    </section>
+
+    <!-- Szekció 3 -->
+    <section class="mb-5 row align-items-center">
+      <div class="col-md-6">
+        <h3>1969 – Apollo-11: Holdra szállás</h3>
+        <p>Neil Armstrong és Buzz Aldrin 1969. július 20-án leszálltak a Holdra az Apollo–11 küldetés részeként. Ez az esemény nemcsak az USA, hanem az egész emberiség számára történelmi pillanat volt. Armstrong híres mondata: „Kis lépés egy embernek, de hatalmas ugrás az emberiségnek.”</p>
+      </div>
+      <div class="col-md-6 particle-mask text-center">
+        <img src="../imgs/apollo11.jpg" class="img-fluid rounded shadow" alt="Holdra szállás">
+      </div>
+    </section>
+
+    <!-- Szekció 4 -->
+    <section class="mb-5 text-center">
+      <h3>Nemzetközi együttműködések és a jövő</h3>
+      <p>Az űrverseny után az országok közötti együttműködésre helyeződött a hangsúly. A Nemzetközi Űrállomás (ISS) több nemzet közös projektje, amely lehetővé tette a hosszú távú emberi jelenlétet a világűrben. Napjainkban a Mars és a mélyűr felfedezése van fókuszban, valamint a magáncégek, mint a SpaceX és Blue Origin is új lendületet adnak az űrkutatásnak.</p>
+        <div class="particle-mask">
+            <img src="../imgs/iss.jpg" class="img-fluid rounded shadow mt-3" alt="ISS" />
+        </div>
+    </section>
+
+  </main>
+
+  <!-- Lábléc -->
+  <footer class="text-center text-white py-3">
+    &copy; 2025 – Webprogramozás Beadandó – NN8T44
+  </footer>
+
+  <!-- Bootstrap JS + saját -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js_storage/index.js"></script>
+</body>
+</html>
