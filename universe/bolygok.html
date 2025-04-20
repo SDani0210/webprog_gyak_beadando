@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bolygók</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Saját CSS -->
+  <link rel="stylesheet" href="../style/style.css" />
+</head>
+<body>
+
+  <!-- Csillogás háttér -->
+  <div id="particle-background"></div>
+
+  <!-- Navigáció -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">Univerzum</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="bolygok.html">Bolygók</a></li>
+          <li class="nav-item"><a class="nav-link" href="csillagok.html">Csillagok</a></li>
+          <li class="nav-item"><a class="nav-link" href="urkutatas.html">Űrkutatás</a></li>
+          <li class="nav-item"><a class="nav-link" href="kapcsolat.html">Kapcsolat</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Fejléc -->
+  <header class="hero-header text-center text-light" style="background-image: url('../imgs/planets.jpg');">
+    <div class="overlay">
+      <h1 class="display-4">Bolygók világa</h1>
+      <p class="lead">Fedezd fel a Naprendszer és az univerzum különleges bolygóit!</p>
+    </div>
+  </header>
+
+  <!-- Átmenet -->
+  <div id="transition-bg"></div>
+
+  <!-- Tartalom -->
+  <main class="container my-5 text-light">
+
+    <!-- Bevezető -->
+    <section class="mb-5">
+      <h2>Mi számít bolygónak?</h2>
+      <p>A bolygó egy égitest, amely közvetlenül egy csillag körül kering, saját fénye nincs, gömbölyű alakú és gravitációs tere képes megtisztítani a pályáját más objektumoktól. A Naprendszerben 8 hivatalos bolygó van, de több ezer exobolygót ismerünk más csillagok körül.</p>
+    </section>
+
+    <!-- Táblázat -->
+    <section class="mb-5">
+      <h2 class="mb-3">Bolygók adatai</h2>
+      <div class="table-responsive">
+        <table class="planet-table">
+          <thead class="table-primary text-dark">
+            <tr>
+              <th>Név</th>
+              <th>Tömeg (kg)</th>
+              <th>Hőmérséklet (°C)</th>
+              <th>Életciklus</th>
+              <th>Távolság a Földtől (millió km)</th>
+              <th>Típus</th>
+              <th>Alkalmas életre?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Merkúr</td><td>3.30×10²³</td><td>167</td><td>Stabil, 4.5 mrd év</td><td>91.7</td><td>Kőzet</td><td>❌</td></tr>
+            <tr><td>Vénusz</td><td>4.87×10²⁴</td><td>464</td><td>Stabil, 4.5 mrd év</td><td>41.4</td><td>Kőzet</td><td>❌</td></tr>
+            <tr><td>Föld</td><td>5.97×10²⁴</td><td>15</td><td>Stabil, 4.5 mrd év</td><td>0</td><td>Kőzet</td><td>✔️</td></tr>
+            <tr><td>Mars</td><td>6.42×10²³</td><td>-63</td><td>Stabil, 4.5 mrd év</td><td>78.3</td><td>Kőzet</td><td>❌</td></tr>
+            <tr><td>Jupiter</td><td>1.90×10²⁷</td><td>-145</td><td>Stabil, 4.5 mrd év</td><td>628.7</td><td>Gázóriás</td><td>❌</td></tr>
+            <tr><td>Szaturnusz</td><td>5.68×10²⁶</td><td>-178</td><td>Stabil, 4.5 mrd év</td><td>1275</td><td>Gázóriás</td><td>❌</td></tr>
+            <tr><td>Uránusz</td><td>8.68×10²⁵</td><td>-224</td><td>Stabil, 4.5 mrd év</td><td>2724</td><td>Jégóriás</td><td>❌</td></tr>
+            <tr><td>Neptunusz</td><td>1.02×10²⁶</td><td>-218</td><td>Stabil, 4.5 mrd év</td><td>4350</td><td>Jégóriás</td><td>❌</td></tr>
+            <tr><td>Kepler-186f</td><td>≈5.0×10²⁴</td><td>−40</td><td>Stabil</td><td>500</td><td>Exo, Kőzet</td><td>✔️</td></tr>
+            <tr><td>Gliese 581g</td><td>≈6.0×10²⁴</td><td>−30</td><td>Stabil</td><td>20.3</td><td>Exo, Kőzet</td><td>✔️</td></tr>
+            <tr><td>TRAPPIST-1d</td><td>4.8×10²⁴</td><td>15</td><td>Stabil, 3.8 mrd év</td><td>39.6</td><td>Exo, Kőzet</td><td>✔️</td></tr>
+            <tr><td>Proxima b</td><td>1.3×10²⁵</td><td>−39</td><td>Stabil</td><td>4.24</td><td>Exo, Kőzet</td><td>✔️</td></tr>
+            <tr><td>Kepler-452b</td><td>5.0×10²⁴</td><td>22</td><td>Stabil</td><td>1400</td><td>Exo, Kőzet</td><td>✔️</td></tr>
+            <tr><td>HD 189733b</td><td>2.1×10²⁷</td><td>1200</td><td>Stabil</td><td>63</td><td>Gázóriás</td><td>❌</td></tr>
+            <tr><td>Gliese 667Cc</td><td>3.9×10²⁴</td><td>−20</td><td>Stabil</td><td>22.1</td><td>Exo, Kőzet</td><td>✔️</td></tr>
+            <tr><td>HD 209458b</td><td>2.2×10²⁷</td><td>1320</td><td>Stabil</td><td>153</td><td>Gázóriás</td><td>❌</td></tr>
+            <tr><td>K2-18b</td><td>8.6×10²⁴</td><td>−10</td><td>Stabil</td><td>124</td><td>Exo, Vízvilág</td><td>✔️</td></tr>
+            <tr><td>LHS 1140b</td><td>6.6×10²⁴</td><td>−40</td><td>Stabil</td><td>40</td><td>Exo, Kőzet</td><td>✔️</td></tr>
+            <tr><td>WASP-12b</td><td>1.4×10²⁷</td><td>2500</td><td>Stabil</td><td>870</td><td>Gázóriás</td><td>❌</td></tr>
+            <tr><td>Kapteyn b</td><td>4.8×10²⁴</td><td>−20</td><td>Stabil</td><td>12.8</td><td>Exo, Kőzet</td><td>✔️</td></tr>
+            <tr><td>HD 40307g</td><td>7.2×10²⁴</td><td>−17</td><td>Stabil</td><td>42</td><td>Exo, Kőzet</td><td>✔️</td></tr>
+            <tr><td>Kepler-62f</td><td>4.5×10²⁴</td><td>0</td><td>Stabil</td><td>1200</td><td>Exo, Kőzet</td><td>✔️</td></tr>
+            <tr><td>Gliese 163c</td><td>6.9×10²⁴</td><td>−15</td><td>Stabil</td><td>49</td><td>Exo, Kőzet</td><td>✔️</td></tr>
+            <tr><td>OGLE-2005-BLG-390Lb</td><td>5.5×10²⁴</td><td>−220</td><td>Fagyott</td><td>21000</td><td>Exo, Jégbolygó</td><td>❌</td></tr>
+            <tr><td>Gliese 581d</td><td>6.3×10²⁴</td><td>−40</td><td>Stabil</td><td>20.3</td><td>Exo, Kőzet</td><td>✔️</td></tr>
+            <tr><td>Kepler-22b</td><td>2.4×10²⁵</td><td>22</td><td>Stabil</td><td>600</td><td>Exo, Kőzet</td><td>✔️</td></tr>
+            <tr><td>Kepler-438b</td><td>6.0×10²⁴</td><td>−35</td><td>Stabil, ~4.4 mrd év</td><td>1470</td><td>Exo, Kőzet</td><td>✔️</td></tr>
+            <tr><td>Kepler-1649c</td><td>5.9×10²⁴</td><td>−39</td><td>Stabil, ~4.9 mrd év</td><td>300</td><td>Exo, Kőzet</td><td>✔️</td></tr>
+            <tr><td>Ross 128 b</td><td>5.7×10²⁴</td><td>−10</td><td>Stabil, ~5.0 mrd év</td><td>11</td><td>Exo, Kőzet</td><td>✔️</td></tr>
+            <tr><td>Teegarden b</td><td>5.8×10²⁴</td><td>5</td><td>Stabil, ~8.0 mrd év</td><td>12.5</td><td>Exo, Kőzet</td><td>✔️</td></tr>
+            <tr><td>TOI-700 d</td><td>6.1×10²⁴</td><td>−30</td><td>Stabil, ~2.0 mrd év</td><td>101.4</td><td>Exo, Kőzet</td><td>✔️</td></tr>
+
+
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Bolygók galériája</h2>
+        <div class="row justify-content-center g-4">
+          
+            <div class="planet-card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="../imgs/earth.jpg" alt="Föld" />
+                  </div>
+                  <div class="card-back">
+                    <span>Föld</span>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="planet-card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="../imgs/mars.jpg" alt="Föld" />
+                  </div>
+                  <div class="card-back">
+                    <span>Mars</span>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="planet-card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="../imgs/kepler168f.jpg" alt="Föld" />
+                  </div>
+                  <div class="card-back">
+                    <span>Kepler-186f</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="planet-card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="../imgs/OGLE_2005.jpg" alt="Föld" />
+                  </div>
+                  <div class="card-back">
+                    <span>OGLE-2005-BLG-390</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="planet-card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <img src="../imgs/Gliese_667.jpg" alt="Föld" />
+                  </div>
+                  <div class="card-back">
+                    <span>Gliese 667Cc</span>
+                  </div>
+                </div>
+              </div>
+
+       
+          
+      
+        </div>
+      </section>
+      
+  </main>
+
+  <!-- Lábléc -->
+  <footer class="text-center text-white py-3">
+    &copy; 2025 – Webprogramozás Beadandó – NN8T44
+  </footer>
+
+  <!-- Bootstrap JS + saját -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js_storage/index.js"></script>
+  <script src="../js_storage/planets.js"></script>
+
+</body>
+</html>
